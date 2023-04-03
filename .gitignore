@@ -1,1 +1,3 @@
 .idea
+tests/geckodriver.log
+tests/.pytest_cache
