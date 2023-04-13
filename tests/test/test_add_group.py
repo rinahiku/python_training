@@ -5,8 +5,6 @@ from python_training.tests.model.group import Group
 from python_training.tests.fixture.application import Application
 
 
-# тест в файрфоксе
-
 @pytest.fixture
 def app(request):
     fixture = Application()
