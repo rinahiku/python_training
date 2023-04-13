@@ -2,8 +2,8 @@
 
 import pytest
 
-from group import Group
-from application import Application
+from python_training.tests.model.group import Group
+from python_training.tests.fixture.application import Application
 
 
 # тест в файрфоксе

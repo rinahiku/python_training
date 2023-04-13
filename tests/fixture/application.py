@@ -3,7 +3,7 @@ from selenium import webdriver
 
 class Application:
     def __init__(self):
-        self.wd = webdriver.Firefox()
+        self.wd = webdriver.Firefox(firefox_binary="C:\\Program Files\\Mozilla Firefox\\firefox.exe")
         self.wd.implicitly_wait(30)
 
     def logout(self):
