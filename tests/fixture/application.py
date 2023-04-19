@@ -1,7 +1,7 @@
 from selenium import webdriver
-from python_training.tests.fixture.session import SessionHelper
-from python_training.tests.fixture.group import GroupHelper
-from python_training.tests.fixture.contacts import ContactHelper
+from tests.fixture.session import SessionHelper
+from tests.fixture.group import GroupHelper
+from tests.fixture.contacts import ContactHelper
 
 
 class Application:
@@ -19,6 +19,9 @@ class Application:
     def return_to_home_page(self):
         wd = self.wd
         wd.find_element_by_link_text("home page").click()
+
+    def clear_cookie(self):
+        self.wd.delete_all_cookies()
 
     def destroy(self):
         self.wd.quit()

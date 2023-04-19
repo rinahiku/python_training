@@ -1,6 +1,6 @@
-from python_training.tests.fixture.session import SessionHelper
-from python_training.tests.fixture.group import GroupHelper
-from python_training.tests.fixture.contacts import ContactHelper
+from tests.fixture.session import SessionHelper
+from tests.fixture.group import GroupHelper
+from tests.fixture.contacts import ContactHelper
 
 
 class AllHelpers:

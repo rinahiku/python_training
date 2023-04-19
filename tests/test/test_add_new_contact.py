@@ -1,4 +1,4 @@
-from python_training.tests.model.contact import Contact
+from tests.model.contact import Contact
 
 
 def test_add_new_contact(app):
@@ -14,3 +14,4 @@ def test_add_new_contact(app):
                                    homepage="ddddd", bday="11",
                                    bmonth="September", address2="dkskdkdk", phone2="mmmm", notes="dkkkk"))
     app.session.logout()
+    app.clear_cookie()
