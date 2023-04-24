@@ -15,3 +15,19 @@ def test_add_new_contact(app):
                                    bmonth="September", address2="dkskdkdk", phone2="mmmm", notes="dkkkk"))
     app.session.logout()
     app.clear_cookie()
+
+
+def test_add_empty_contact(app):
+    app.session.login(username="admin", password="secret")
+    app.contact.add_new_contact()
+    app.contact.create_new(Contact(firstname="", middlename="", lastname="",
+                                   nickname="",
+                                   title="", company="",
+                                   address="", phone_home="",
+                                   phone_mobile="",
+                                   phone_work="",
+                                   fax="", email="", email2="", email3="",
+                                   homepage="", bday="-",
+                                   bmonth="-", address2="", phone2="", notes=""))
+    app.session.logout()
+    app.clear_cookie()
