@@ -8,7 +8,7 @@ def test_cancel_removing(app):
 
 def test_remove_contact(app):
     app.session.login(username="admin", password="secret")
-    app.contact.delete_first_contact()
+    app.contact.del_first_contact()
     app.session.logout()
     app.clear_cookie()
 
