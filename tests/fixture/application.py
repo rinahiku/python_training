@@ -20,7 +20,7 @@ class Application:
 
     def open_home_page(self):
         wd = self.wd
-        if not len(wd.find_elements_by_link_text("home page")) > 0 or len(wd.find_elements_by_name("user")) > 0 or len(wd.find_elements_by_link_text("add new")) > 0:
+        if not len(wd.find_elements_by_link_text("home page")) > 0:
             wd.get("http://localhost/addressbook/")
 
     def return_to_home_page(self):
